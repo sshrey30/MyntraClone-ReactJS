@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <header>
-      <div class="logo_container">
-        <a href="#"><img class="myntra_home " src="images/myntra_logo.webp" alt="Logo" /></a>
+      <div className="logo_container">
+        <Link to="/"><img className="myntra_home " src="images/myntra_logo.webp" alt="Logo" /></Link>
       </div>
-      <div class="nav_bar">
+      <div className="nav_bar">
         <a href="#">Men</a>
         <a href="#">Women</a>
         <a href="#">Kids</a>
@@ -14,23 +15,23 @@ function Header() {
         <a href="#">Beauty</a>
         <a href="#">Studio <sup>New</sup></a>
       </div>
-      <div class="search_bar">
-        <i class="bi bi-search search_icon"></i>
-        <input class="search_box" placeholder="Search for products, brands and more" type="text" />
+      <div className="search_bar">
+        <i className="bi bi-search search_icon"></i>
+        <input className="search_box" placeholder="Search for products, brands and more" type="text" />
       </div>
-      <div class="action_bar">
-        <div class="action_container">
-          <i class="bi bi-person action_icon"></i>
-          <span class="action_name">Profile</span>
+      <div className="action_bar">
+        <div className="action_container">
+          <i className="bi bi-person action_icon"></i>
+          <span className="action_name">Profile</span>
         </div>
-        <div class="action_container">
-          <i class="bi bi-heart"></i>
-          <span class="action_name">Wishlist</span>
+        <div className="action_container">
+          <i className="bi bi-heart"></i>
+          <span className="action_name">Wishlist</span>
         </div>
-        <a class="action_container" href="bag.html">
-          <i class="bi bi-bag"></i>
-          <span class="action_name">Bag</span>
-        </a>
+        <Link className="action_container" to="/bag">
+          <i className="bi bi-bag"></i>
+          <span className="action_name">Bag</span>
+        </Link>
       </div>
     </header>
   )

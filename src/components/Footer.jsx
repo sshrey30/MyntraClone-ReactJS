@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
   return (
     <footer>
-      <div class="footer_container">
-        <div class="footer_column">
+      <div className="footer_container">
+        <div className="footer_column">
           <h3>Online Shopping</h3>
           <a href="#">Men</a>
           <a href="#">Women</a>
@@ -15,7 +15,7 @@ function Footer() {
           <a href="#">Myntra Insider</a>
         </div>
 
-        <div class="footer_column">
+        <div className="footer_column">
           <h3>CUSTOMER POLICIES </h3>
           <a href="#">Contact Us</a>
           <a href="#">FAQ</a>
@@ -29,7 +29,7 @@ function Footer() {
           <a href="#">Grievance Officer</a>
         </div>
 
-        <div class="footer_column">
+        <div className="footer_column">
           <h3>Useful Links</h3>
           <a href="#">Blog</a>
           <a href="#">Careers</a>
@@ -43,7 +43,7 @@ function Footer() {
 
       <hr />
 
-      <div class="copyright">
+      <div className="copyright">
         © 2024 www.myntra.com. All rights reserved.
       </div>
     </footer>
