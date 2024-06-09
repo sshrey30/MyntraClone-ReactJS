@@ -1,8 +1,17 @@
 import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <Header />
+      <main>
+        <div className="items-container">
+        </div>
+      </main>
+      <Footer />
+    </>
   )
 }
 
